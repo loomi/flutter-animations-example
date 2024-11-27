@@ -17,6 +17,14 @@ abstract class _ExampleStore with Store {
   ExampleModel? example;
 
   @observable
+  ObservableList<Color> randomColors = ObservableList.of([
+    const Color(0xFFFFAD05), // Laranja âmbar
+    const Color(0xFF6A4C93), // Roxo profundo
+    const Color(0xFF98CE00), // Verde limão
+    const Color(0xFFE71D36), // Vermelho tomate
+  ]);
+
+  @observable
   AppState appState = AppState.loaded;
 
   @action
