@@ -31,6 +31,13 @@ class _MoodSplashScreenState extends State<MoodSplashScreen>
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    _logoController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       return Stack(

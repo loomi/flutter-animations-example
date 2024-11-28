@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/animated_form_screen.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/animated_shimmer_list_screen.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/mood_splash_screen.dart';
+import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/pensea_splash.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/custom_page_view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
    const AnimatedShimmerListScreen(),
    const AnimatedFormScreen(),
    const MoodSplashScreen(),
+   const PenseaSplash(),
   ];
 
   @override
