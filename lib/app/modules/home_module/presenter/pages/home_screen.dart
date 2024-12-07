@@ -4,6 +4,7 @@ import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animatio
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/mood_splash_screen.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/animations/pensea_splash.dart';
 import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/custom_page_view.dart';
+import 'package:flutter_leap_v2/app/modules/home_module/presenter/pages/list_page.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = "/homeScreen";
@@ -15,10 +16,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> minhasPaginas = [
-   const AnimatedShimmerListScreen(),
-   const AnimatedFormScreen(),
-   const MoodSplashScreen(),
-   const PenseaSplash(),
+    const AnimatedShimmerListScreen(),
+    const AnimatedFormScreen(),
+    const MoodSplashScreen(),
+    const PenseaSplash(),
+    const ListPage(),
   ];
 
   @override
